@@ -115,12 +115,16 @@
     \item \textbf{BLE Thresholding and Directional Antenna Validation:} Developed and validated a BLE-based engineering solution using nRF52840 DK boards and a fixed-interval BLE beacon device, combining RSSI thresholding and directional antenna behavior to address a real deployment scenario. Modified and validated Nordic BLE example firmware and supporting scripts to streamline data collection, progressing through component sanity checks, RSSI measurement campaigns, mathematical threshold derivation, and final threshold validation under practical RF conditions
 \end{itemize}
 
+
 \item \textbf{Industry-Collaborative Project (Rogers)}
 \begin{itemize}[leftmargin=1.5em]
-    \item Built and validated an end-to-end 5G SA testbed using Quectel UE and SDR (USRP B210), conducting controlled SNR ladder experiments with attenuators, OTA static setups, and mobility scenarios; measured and analyzed KPIs including throughput, latency under load, RSRP, RSRQ, and SINR
-    \item Performed outdoor Wi-Fi/5G evaluations for mobile robots (single and mesh), addressing deployment constraints including temperature, interference, and Fresnel effects, and quantifying mobility-induced throughput degradation and LTE anchoring effects
-\end{itemize}
+ \item \textbf{End-to-End 5G SA Testbed Validation:} Built, integrated, debugged, and validated a private 5G SA testbed using srsRAN gNB, Open5GS 5GC, USRP B210 SDR, and Quectel RM502Q-AE UE; resolved AMF/SMF/UPF registration and PDU session issues; validated stable UE attachment, PDU session establishment, and user-plane connectivity; used gNB/core logs with AT/QMI modem diagnostics to verify end-to-end SA operation; conducted controlled SNR ladder experiments with attenuators, OTA static setups, and mobility scenarios; investigated UL/DL asymmetry by analyzing MCS/CQI logs from the gNB side; and measured KPIs including throughput, latency under load, RSRP, RSRQ, and SINR
+   \item \textbf{MASc Thesis: Latency-under-Load Characterization of Wi-Fi/5G for Mobile Robot Teleoperation} — conducted rigorous indoor and outdoor Wi-Fi/5G evaluations for mobile robots (single and mesh), with 20 runs per scenario; performed latency-under-load (LuL) characterization by overlaying wireless quality metrics including MCS, SNR, SINR, and RSSI against wireless performance metrics including P99 latency and average throughput; addressed deployment constraints including interference; quantified mobility-induced throughput degradation and LTE anchoring effects; and provided novel insights through driver-level QMI and \texttt{iw} debugging, troubleshooting, and data collection using Quectel chipsets
+\item \textbf{4G/5G Walk Test Around City of Waterloo} \textit{(Ongoing):} Aligned timestamped wireless quality logs and performance metrics including throughput and latency under load with GPS data to create cellular street-level heatmaps
 
+   \item \textbf{NR-U/Wi-Fi Coexistence Simulation:} Evaluated NR-U coexistence with Wi-Fi using ns-3.35, CTTC 5G-LENA, and NR-U extensions by varying LBT aggressiveness and traffic load; analyzed throughput, latency, jitter, fairness, Wi-Fi starvation, and NR performance penalties under shared 5.2 GHz unlicensed spectrum
+    
+\end{itemize}
 
  
 
