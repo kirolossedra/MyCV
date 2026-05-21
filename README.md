@@ -5,7 +5,7 @@
 Current profile should not be positioned only toward narrow RF/RAN research roles.
 
 Target broader engineering categories including:
-- Systems Engineering
+- Systems Engineering/ Analyst
 - Systems Integration
 - Validation / QA Engineering
 - Technical Support Engineering
