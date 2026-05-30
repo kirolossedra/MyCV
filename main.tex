@@ -88,12 +88,16 @@
 %----------HEADING----------
 \begin{center}
     {\Huge \scshape Kirolos Sedra} \\ \vspace{2pt}
-    {\large \bfseries Wireless Performance \& Systems Engineer} \\ \vspace{6pt}
-    Ottawa, Ontario(relocatable between Ottawa, Waterloo) \\ \vspace{1pt}
+    {\large \bfseries SW Testing \& Validation Engineer} \\ \vspace{6pt}
+    {\small
+Systems break in interesting ways, and that is exactly what draws me to testing and validation. My experience spans API testing, SIT, UAT, and end-to-end system validation across wireless, embedded IoT, and fintech domains. I investigate failures across layers, isolate root causes, learn new frameworks quickly, and build practical test infrastructure that improves coverage, reproducibility, and team-wide validation discipline.
+    } \\ \vspace{6pt}
+    Waterloo, Ontario (relocatable between Waterloo and Ottawa and Montréal) \textbar{} Employer-independent Canadian work authorization through French-language immigration pathways; no sponsorship required \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ +1 519-580-9685 ~ \href{mailto:kasedra@proton.me}{\raisebox{-0.2\height}\faEnvelope\  \underline{kasedra@proton.me}} ~ 
     \href{https://linkedin.com/in/kirolossedra}{\raisebox{-0.2\height}\faLinkedin\ \underline{Kirolos Sedra}} 
     \vspace{-8pt}
 \end{center}
+
 
 \section{Experience}
   \resumeSubHeadingListStart
@@ -105,31 +109,26 @@
 
 \item \textbf{Industry-Collaborative Project (Apple)}
 \begin{itemize}[leftmargin=1.5em]
-    \item Owned end-to-end design and execution of production-representative wireless validation scenarios across enterprise (Aruba) and consumer APs (ASUS, TP-Link) in controlled anechoic environments, including roaming (802.11r/v, PMK caching, ClientMatch), coexistence, fairness, and resource allocation
-    \item Designed and automated a large-scale wireless testbed, reducing human intervention by \textasciitilde70\% via custom orchestration (Ethernet-triggered FTP client, Aruba AirRecorder logging at 1 Hz, automated DNS/DHCP/RADIUS workflows)
-    \item Resolved critical test-suite incompatibility between two frameworks by adapting and integrating an open-source Objective-C DUT application, restoring full experimental functionality
-    \item Led advanced performance analysis of Wi-Fi systems, quantifying spectral efficiency across OSI layers and TCP dynamics (slow start, CUBIC, HyStart), and identifying throughput gaps between 160 MHz and 80 MHz configurations
-    \item Developed RF measurement pipelines using Raspberry Pi and TinySA for calibrated power measurements (50 ohm matching, attenuation control), analyzing channel gain and polarization effects, and generating waterfall plots for frequency–time behavior, enabling validation against digital twin and theoretical models, the system design was subject to space optimization constraints, and it was configured wirelessly using SSH
-    \item Built scalable simulation and experimentation frameworks using MATLAB and NS-3, including a multi-threaded broadcast emulation system preserving throughput across processes; evaluated packet loss under Gaussian noise
+ \item Designed, automated, and executed production-representative wireless \textbf{validation test scenarios} across enterprise (Aruba) and consumer APs in controlled anechoic environments, covering roaming, coexistence, fairness, and resource allocation; reduced human intervention by \textasciitilde70\% via custom \textbf{test orchestration} (Ethernet-triggered FTP client, Aruba AirRecorder logging, automated DNS/DHCP/RADIUS workflows)
 
-  \item \textbf{BLE Thresholding and Directional Antenna Validation:} Developed and validated a BLE-based engineering solution using nRF52840 DK boards and a fixed-interval BLE beacon device, combining RSSI thresholding and directional antenna behavior to address a real deployment scenario. Solved a real engineering cost-optimization question by proposing the replacement of expensive RF shielding with directional antennas and RSSI thresholding, saving approximately tens of thousands of dollars that would otherwise be spent on shielding in a real engineering deployment. Modified and validated Nordic BLE example firmware and supporting scripts to streamline data collection, progressing through component sanity checks, RSSI measurement campaigns, mathematical threshold derivation, and final threshold validation under practical RF conditions.
+\item Developed \textbf{RF measurement and validation pipelines} using Raspberry Pi and TinySA; performed \textbf{root cause analysis} of signal anomalies; validated results against digital twin and theoretical models
+ 
+
+\item \textbf{BLE Thresholding and Directional Antenna Validation:} Designed and executed a \textbf{structured validation campaign} using nRF52840 DK boards, progressing through component \textbf{sanity checks}, \textbf{RSSI measurement campaigns}, and \textbf{final threshold validation} under practical RF conditions. Modified and \textbf{validated Nordic BLE example firmware} and supporting scripts to streamline data collection. Proposed replacing expensive RF shielding with directional antennas and RSSI thresholding, saving tens of thousands of dollars in deployment cost.
   
 \end{itemize}
 
 
 \item \textbf{Industry-Collaborative Project (Rogers)}
 \begin{itemize}[leftmargin=1.5em]
- \item \textbf{End-to-End 5G SA Testbed Validation:} Built, integrated, debugged, and validated a private 5G SA testbed using srsRAN gNB, Open5GS 5GC, USRP B210 SDR, and Quectel RM502Q-AE UE; resolved AMF/SMF/UPF registration and PDU session issues; validated stable UE attachment, PDU session establishment, and user-plane connectivity; used gNB/core logs with AT/QMI modem diagnostics to verify end-to-end SA operation; conducted controlled SNR ladder experiments with attenuators, OTA static setups, and mobility scenarios; investigated UL/DL asymmetry by analyzing MCS/CQI logs from the gNB side; and measured KPIs including throughput, latency under load, RSRP, RSRQ, and SINR
+\item \textbf{End-to-End 5G SA Testbed Validation:} Built, integrated, and validated a private 5G SA testbed; performed \textbf{root cause analysis} of registration and session failures; used modem diagnostics as \textbf{test instrumentation} to verify end-to-end operation; conducted controlled \textbf{SNR ladder experiments} across static and mobility scenarios; measured \textbf{KPIs} including throughput, latency, and signal quality metrics
 
- 
-\item \textbf{MASc Thesis: Latency-under-Load Characterization of Wi-Fi/5G for Mobile Robot Teleoperation} — conducted rigorous indoor and outdoor Wi-Fi/5G evaluations for mobile robots (single and mesh), with 20 runs per scenario; performed latency-under-load (LuL) characterization by overlaying wireless quality metrics including MCS, SNR, SINR, and RSSI against performance metrics including P99 latency and average throughput; addressed deployment constraints including interference; quantified mobility-induced throughput degradation and LTE anchoring effects; derived novel insights into wireless behaviour under real-world teleoperation conditions; and collected and logged wireless link data via \texttt{iw}, \texttt{nmcli}, \texttt{bluetoothctl}, \texttt{tcpdump}, and QMI interface tooling on Quectel chipsets
-
+\item \textbf{MASc Thesis: Latency-under-Load Characterization of Wi-Fi/5G for Mobile Robot Teleoperation} --- conducted indoor and outdoor \textbf{performance test campaigns} with 20 runs per scenario as \textbf{controlled test repetitions}; measured \textbf{performance KPIs} (P99 latency, throughput); performed \textbf{root cause analysis} of mobility-induced degradation; collected and logged wireless link data via Linux tooling as \textbf{test instrumentation drivers}
 
 
 
-\item \textbf{4G/5G Walk Test Around City of Waterloo} \textit{(Ongoing):} Aligned timestamped wireless quality logs and performance metrics including throughput and latency under load with GPS data to create cellular street-level heatmaps
 
-   \item \textbf{NR-U/Wi-Fi Coexistence Simulation:} Evaluated NR-U coexistence with Wi-Fi using ns-3.35, CTTC 5G-LENA, and NR-U extensions by varying LBT aggressiveness and traffic load; analyzed throughput, latency, jitter, fairness, Wi-Fi starvation, and NR performance penalties under shared 5.2 GHz unlicensed spectrum
+
     
 \end{itemize}
 
@@ -143,26 +142,13 @@
   {Aquasensing}{Mar 2026 -- Present}
   {Firmware Specialist}{Part-time}
   \resumeItemListStart
-    \resumeItem{Led the migration testing and rollout of a new SDK, resolving long-standing technical debt impacting production systems}
-    \resumeItem{\textbf{Applied corporate software-engineering best practices learned at Ejada} by introducing disciplined feature ownership, one-by-one committed updates, Git-based version control, structured review habits, and controlled change tracking across firmware and backend workflows}
-    \resumeItem{\textbf{Product Owner} for BLE--LTE IoT system, driving firmware roadmap, enforcing Git-based version control practices, coordinating inter-team sprints and test cases through Azure DevOps under Agile methodology, and managing intra-team feature requests, ownership, and tracking using Jira}
-    \resumeItem{\textbf{Transferred database safety practices from corporate fintech development into IoT production workflows} by enforcing stored procedures with logging and rollback mechanisms, preventing irreversible database states in production systems}
-    \resumeItem{Organized and supervised comprehensive test suites, ensuring consistency, reproducibility, and alignment with system-level validation goals}
-    \resumeItem{Diagnosed and resolved system-level issues through RF-informed testing, including anechoic chamber experiments to isolate defects and guide firmware improvements}
-    \resumeItem{Spearheaded technical discussions with telecom partners (including Bell IoT), evaluating plans, specifications, and pricing for large-scale IoT deployments}
+    \resumeItem{Led migration \textbf{testing and validation} of a new SDK rollout, resolving long-standing technical debt impacting production systems}
+    \resumeItem{\textbf{Designed and implemented an automated UAT framework} for the BLE--LTE IoT system: built software stubs that impersonate MQTT packets to simulate real system alerts, and developed automated test scripts that trigger hardware events (power cycling via ESP32) to send POST requests --- doubling test execution efficiency and increasing team-wide test participation}
+    \resumeItem{\textbf{Diagnosed and resolved time-critical, production-impacting bugs in Azure IoT Hub Logic App workflows} through \textbf{end-to-end system testing} to observe live system behaviour and \textbf{MQTT stub-based testing} to isolate and reproduce failure conditions}
+    \resumeItem{\textbf{Applied corporate software-engineering best practices learned at Ejada} by introducing disciplined feature ownership, Git-based version control, structured review habits, and controlled change tracking across firmware and backend workflows}
+    \resumeItem{Organized and supervised comprehensive \textbf{test suites}, ensuring consistency, reproducibility, and alignment with system-level \textbf{validation} goals}
+    \resumeItem{Diagnosed and resolved system-level issues through \textbf{RF-informed testing}, including anechoic chamber experiments to isolate defects and guide firmware improvements}
     \resumeItem{Directed firmware and system integration efforts for IoT gateways, improving reliability, feature completeness, and production stability}
-    \resumeItem{Led hiring processes for software co-op roles, including technical interviews and candidate evaluation}
-  \resumeItemListEnd
-
-\resumeSubheading
-  {Aquasensing}{Sep 2024 -- Feb 2026}
-  {Research Intern (Cloud, IoT \& Firmware Systems)}{Part-time}
-  \resumeItemListStart
-    \resumeItem{Developed cloud-integrated IoT applications using React, Django, and Azure for real-time data analytics and system scalability}
-    \resumeItem{Worked with LoRa/LoRaWAN systems to enable reliable device-to-cloud communication}
-    \resumeItem{Developed and debugged firmware for IoT gateway devices, focusing on hardware-software integration and system stability}
-    \resumeItem{Built and automated a test control suite for 70 IoT gateway units, including provisioning workflows using Azure CLI}
-    \resumeItem{Diagnosed cross-layer issues across embedded devices and cloud infrastructure, improving communication reliability and overall system performance}
   \resumeItemListEnd
 
 \resumeSubheading
@@ -175,26 +161,15 @@
 \resumeSubheading
   {Ejada Systems}{Sep 2023 -- Aug 2024}
   {Software Engineer}{Full-time, Hybrid}
-  \resumeItemListStart
-    \resumeItem{Engineered and optimized REST APIs and backend microservices for fintech systems, ensuring scalable and reliable service integration while collaborating with a multicultural team based in Saudi Arabia on loan-focused products for Al Rajhi Bank and Emkan Governmental Services}
-    \resumeItem{Architected and developed a new BNPL application for Emkan Saudi Arabia from the ground up using Java Spring Boot, working in a two-person core team with the team lead and handling backend architecture, end-to-end business logic, and system integration}
-    \resumeItem{Improved database query performance by 30\% through SQL optimization, indexing, stored-procedure design, and efficient data access patterns}
-    \resumeItem{Increased API performance by 50\% by eliminating redundant stored procedures and optimizing data retrieval logic across backend service flows}
-    \resumeItem{Used stored procedures to support API development, database-side debugging, and testing of fintech backend workflows}
-    \resumeItem{Maintained rollback scripts for data and schema changes, reducing deployment risk and supporting controlled recovery during database updates}
-    \resumeItem{Implemented database operation logging inside stored procedures for modification and deletion actions, improving traceability of backend data changes}
-    \resumeItem{Worked across a structured delivery lifecycle including development environments, feature-specific branches, System Integration Testing (SIT), and production environments}
+\resumeItemListStart
+    \resumeItem{Developed, optimized and tested REST APIs and backend microservices for fintech products (Al Rajhi Bank, Emkan) using Java Spring Boot, including a BNPL application built from the ground up}
+    \resumeItem{Participated in full \textbf{STLC} across \textbf{Unit Testing}, \textbf{System Integration Testing (SIT)}, and \textbf{UAT} phases for fintech backend workflows, covering REST API correctness, stored procedure logic, and end-to-end business flow validation}
+    \resumeItem{Increased \textbf{API performance} by 50\%; validated improvements through \textbf{API performance testing} across backend service flows}
+    \resumeItem{Improved database query performance by 30\%; validated through \textbf{database-side debugging} and \textbf{backend test validation} of stored procedure logic}
+    \resumeItem{Maintained rollback scripts for schema changes, reducing deployment risk and supporting controlled recovery --- enforcing \textbf{safe deployment validation} practices}
+    \resumeItem{Worked across a structured delivery lifecycle: development, feature branches, \textbf{SIT}, and production environments}
   \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
- \section{Publications}
-\resumeSubHeadingListStart
-
-\resumeItem{\textbf{Scalability Analysis of Wi-Fi Broadcast Mechanisms Using Simulation and Hybrid Approaches}}
-
-\resumeItem{\textbf{Trajectory-Based Performance Characterization of Wi-Fi for Outdoor Mobile Robot Teleoperation}}
-
-\resumeSubHeadingListEnd
 
 \section{Education}
   \resumeSubHeadingListStart
@@ -217,19 +192,18 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming:} Python, C/C++, Java \\
+
+\textbf{Programming \& Frameworks:} Python, C/C++, Java, Spring Boot, Django, React, JUnit, Selenium, SQL, SQL stored procedures, noSql \\
+
      
-     \textbf{Wireless Technologies:} Wi-Fi 6/6E, 5G NR, LTE, BLE, 802.11k/v/r, RADIUS, PMK Caching \\
-     
+
      \textbf{RF \& Wireless Testing:} SDR (PlutoSDR, USRP), Spectrum Analyzer, Vector Network Analyzer (VNA), Anechoic Chambers, Shielding, Antenna Design \& Orientation, Interference \& Coexistence Testing \\
      
-     \textbf{Network Tools \& Protocols:} Wireshark, ArubaOS, DHCP, DNS, NTP, FTP, HTTPS, TCP/IP, Mininet, SSH \\
+  
+
+     \textbf{Testing:} UAT, SIT, Unit Testing, API Performance Testing, Test Automation, MQTT Stub/Simulation, Hardware-in-the-Loop Testing, Testbed Design, KPI Validation, Root Cause Analysis \\
      
-     \textbf{Simulation \& Modeling:} MATLAB, Simulink, NS-3, GNU Radio, PreScan \\
-     
-     \textbf{Embedded \& Systems:} ESP32(Wi-Fi),Arduino, STM32, Raspberry Pi, LoRa/LoRaWAN, nRF Connect \\
-     
-     \textbf{Operating Systems:} Linux, macOS, Raspberry
+     \textbf{Operating Systems:} Linux, macOS, Raspberry Pi OS
     }}
  \end{itemize}
 
@@ -239,8 +213,8 @@ IEEE AP-S Chapter Webmaster and Treasurer. Media Lead and Director of Service, m
 
 
 \section{Coursework}
-\textbf{University of Waterloo:} Data and Knowledge Modelling and Analysis; Image Processing; Computational Intelligence; Text Analytics / NLP. \\
-\textbf{Ain Shams University:} Real-Time Operating Systems using FreeRTOS; Computer Architecture; Software Design Patterns.
+
+\textbf{Ain Shams University:} Software Testing, Software Design Patterns
 
 
 \section{Soft Skills}
