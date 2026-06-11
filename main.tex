@@ -110,6 +110,11 @@
     \item Resolved critical test-suite incompatibility between two frameworks by adapting and integrating an open-source Objective-C DUT application, restoring full experimental functionality
     \item Led advanced performance analysis of Wi-Fi systems, quantifying spectral efficiency across OSI layers and TCP dynamics (slow start, CUBIC, HyStart), and identifying throughput gaps between 160 MHz and 80 MHz configurations
     \item Developed RF measurement pipelines using Raspberry Pi and TinySA for calibrated power measurements (50 ohm matching, attenuation control), analyzing channel gain and polarization effects, and generating waterfall plots for frequency–time behavior, enabling validation against digital twin and theoretical models, the system design was subject to space optimization constraints, and it was configured wirelessly using SSH
+
+        \item Developed \textbf{Python}-based tooling for \textbf{automated data collection}, \textbf{post-processing}, and \textbf{performance visualization} across all wireless measurement campaigns, forming the backbone of the \textbf{validation and analysis pipeline}; extended to \textbf{real-time system dashboards} for executive-level demonstrations to \textbf{Senior Vice Presidents} and market-facing stakeholders
+
+
+
     \item Built scalable simulation and experimentation frameworks using MATLAB and NS-3, including a multi-threaded broadcast emulation system preserving throughput across processes; evaluated packet loss under Gaussian noise
 
   \item \textbf{BLE Thresholding and Directional Antenna Validation:} Developed and validated a BLE-based engineering solution using nRF52840 DK boards and a fixed-interval BLE beacon device, combining RSSI thresholding and directional antenna behavior to address a real deployment scenario. Solved a real engineering cost-optimization question by proposing the replacement of expensive RF shielding with directional antennas and RSSI thresholding, saving approximately tens of thousands of dollars that would otherwise be spent on shielding in a real engineering deployment. Modified and validated Nordic BLE example firmware and supporting scripts to streamline data collection, progressing through component sanity checks, RSSI measurement campaigns, mathematical threshold derivation, and final threshold validation under practical RF conditions.
